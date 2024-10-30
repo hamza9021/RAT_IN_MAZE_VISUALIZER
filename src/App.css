@@ -1,0 +1,55 @@
+.controls {
+    margin-bottom: 20px;
+  }
+  
+  .controls button {
+    padding: 8px 12px;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  
+  .controls label {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  
+  .maze {
+    display: inline-block;
+  }
+  
+  .maze-row {
+    display: flex;
+  }
+  
+  .maze-cell {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .wall {
+    background-color: #333;
+  }
+  
+  .path {
+    background-color: #add8e6;
+  }
+  
+  .rat {
+    background-color: #ffe680;
+  }
+  
+  .message {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #4caf50; /* green for success or set your own color */
+    margin: 10px;
+    text-align: center;
+  }
+  
