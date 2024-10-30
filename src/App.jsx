@@ -99,6 +99,7 @@ const MazeVisualizer = () => {
 
   return (
     <div>
+      <h1 className='title text-center text-3xl font-bold mt-4 mb-8 text-gray-800'>Maze Visualizer</h1>
       <div className="controls">
         <label>
           Rows:

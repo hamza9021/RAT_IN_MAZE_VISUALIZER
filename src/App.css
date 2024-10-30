@@ -1,55 +1,91 @@
 .controls {
-    margin-bottom: 20px;
-  }
-  
-  .controls button {
-    padding: 8px 12px;
-    margin-right: 10px;
-    font-size: 16px;
-  }
-  
-  .controls label {
-    font-size: 16px;
-    margin-left: 10px;
-  }
-  
-  .maze {
-    display: inline-block;
-  }
-  
-  .maze-row {
-    display: flex;
-  }
-  
-  .maze-cell {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #ddd;
-    font-size: 24px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .wall {
-    background-color: #333;
-  }
-  
-  .path {
-    background-color: #add8e6;
-  }
-  
-  .rat {
-    background-color: #ffe680;
-  }
-  
-  .message {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #4caf50; /* green for success or set your own color */
-    margin: 10px;
-    text-align: center;
-  }
-  
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.controls input[type="number"] {
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 200px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.controls input[type="number"]:focus {
+  border-color: #4a4a4a;
+  box-shadow: 0 0 5px rgba(74, 74, 74, 0.5);
+}
+
+.controls button {
+  padding: 10px 15px;
+  margin: 10px 0;
+  font-size: 16px;
+  color: white;
+  background-color: #4a4a4a;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  width: 100%;
+  max-width: 200px;
+}
+
+.controls button:hover {
+  background-color: #666666;
+  transform: translateY(-2px);
+}
+
+.controls label {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #333;
+  text-align: center;
+}
+
+.maze {
+  display: inline-block;
+  justify-content: center;
+}
+
+.maze-row {
+  display: flex;
+  justify-content: center;
+}
+
+.maze-cell {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ddd;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.wall {
+  background-color: #333;
+}
+
+.path {
+  background-color: #add8e6;
+}
+
+.rat {
+  background-color: #ffe680;
+}
+
+.message {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #4caf50;
+  margin: 10px;
+  text-align: center;
+}
